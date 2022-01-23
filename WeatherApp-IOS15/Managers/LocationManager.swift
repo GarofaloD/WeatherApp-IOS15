@@ -8,6 +8,9 @@
 import Foundation
 import CoreLocation
 
+/**
+ Will help us pull all the information from the location
+ */
 class LocationManager : NSObject, ObservableObject, CLLocationManagerDelegate {
     
     //MARK: - PROPERTIES
