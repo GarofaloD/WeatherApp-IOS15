@@ -18,9 +18,9 @@ class LocationManager : NSObject, ObservableObject, CLLocationManagerDelegate {
     //manager location
     let manager = CLLocationManager()
     
-    //Optional location. Might not get a location (
+    ///Optional location. Might not get a location
     @Published var location : CLLocationCoordinate2D?
-    //Loading State
+    ///Loading State
     @Published var isLoading = false
     
     
@@ -33,13 +33,21 @@ class LocationManager : NSObject, ObservableObject, CLLocationManagerDelegate {
         manager.delegate = self
     }
     
-    //request location
+    /**
+     # RequestLocation
+     Asks for the location and toggles isLocation to true
+     */
     func requestLocation(){
+        //request location
         isLoading = true
         manager.requestLocation()
     }
     
     
+    /**
+     # LocationManager
+     Saves the coordinates into the location property and toggle the isLoading flag to false
+     */
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         //save the coordinates into the location and toggle the isLoading flag

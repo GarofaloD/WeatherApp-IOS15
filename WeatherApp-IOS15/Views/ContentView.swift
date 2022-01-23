@@ -23,13 +23,17 @@ struct ContentView: View {
         VStack{
             
             //We need a conditional since the location is an optional: we could get it or not
+            //if we are able to get a location
             if let location = locationManager.location {
                 Text("Your Coordinates are : \(location.longitude), \(location.latitude)")
             } else {
+                //if we are not able to get a location
+                //and if it is loading
                 if locationManager.isLoading {
-                    ProgressView()
+                    //show spinner
+                    LoadingView()
                 } else {
-                    //Calling WelcomeView
+                    //Call WelcomeView
                     WelcomeView()
                         .environmentObject(locationManager) //...and getting location right away
                 }
