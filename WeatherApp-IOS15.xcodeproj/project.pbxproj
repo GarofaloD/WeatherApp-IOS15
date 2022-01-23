@@ -12,6 +12,7 @@
 		8CDC002C279DDE590056BA8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CDC002B279DDE590056BA8B /* Assets.xcassets */; };
 		8CDC002F279DDE590056BA8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CDC002E279DDE590056BA8B /* Preview Assets.xcassets */; };
 		8CDC0037279DE2740056BA8B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDC0036279DE2740056BA8B /* LocationManager.swift */; };
+		8CDC003A279DE9EF0056BA8B /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDC0039279DE9EE0056BA8B /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		8CDC002B279DDE590056BA8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CDC002E279DDE590056BA8B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8CDC0036279DE2740056BA8B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		8CDC0039279DE9EE0056BA8B /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +55,9 @@
 		8CDC0026279DDE580056BA8B /* WeatherApp-IOS15 */ = {
 			isa = PBXGroup;
 			children = (
-				8CDC0035279DE2640056BA8B /* Managers */,
 				8CDC0027279DDE580056BA8B /* WeatherApp_IOS15App.swift */,
-				8CDC0029279DDE580056BA8B /* ContentView.swift */,
+				8CDC0038279DE82A0056BA8B /* Views */,
+				8CDC0035279DE2640056BA8B /* Managers */,
 				8CDC002B279DDE590056BA8B /* Assets.xcassets */,
 				8CDC002D279DDE590056BA8B /* Preview Content */,
 			);
@@ -76,6 +78,15 @@
 				8CDC0036279DE2740056BA8B /* LocationManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		8CDC0038279DE82A0056BA8B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8CDC0029279DDE580056BA8B /* ContentView.swift */,
+				8CDC0039279DE9EE0056BA8B /* WelcomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +162,7 @@
 				8CDC002A279DDE580056BA8B /* ContentView.swift in Sources */,
 				8CDC0028279DDE580056BA8B /* WeatherApp_IOS15App.swift in Sources */,
 				8CDC0037279DE2740056BA8B /* LocationManager.swift in Sources */,
+				8CDC003A279DE9EF0056BA8B /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
