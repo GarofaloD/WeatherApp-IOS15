@@ -13,6 +13,9 @@ This one will help us connect to the OpenWeatherApi
 import Foundation
 import CoreLocation
 
+/**
+ Manages the connection and response to/from OpenWeatherAPI
+ */
 class WeatherManager{
     
     //MARK: - CUSTOM FUNCTIONS

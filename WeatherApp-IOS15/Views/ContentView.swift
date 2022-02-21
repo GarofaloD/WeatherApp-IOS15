@@ -14,7 +14,9 @@ struct ContentView: View {
     //Instance of LocationManager
     //@StateObject will notify the view every time the location is updated
     @StateObject var locationManager = LocationManager()
-    
+    //Instance of WeatherManager(response needs to be optional, since we might not get one)
+    var weatherManager = WeatherManager()
+    @State var weather: ResponseBody?
     
     //MARK: - BODY
     //MARK: VIEW
@@ -25,7 +27,28 @@ struct ContentView: View {
             //We need a conditional since the location is an optional: we could get it or not
             //if we are able to get a location
             if let location = locationManager.location {
-                Text("Your Coordinates are : \(location.longitude), \(location.latitude)")
+                
+                //Location gathering test
+                //Text("Your Coordinates are : \(location.longitude), \(location.latitude)")
+                
+                //If there is already some weather data
+                if let weather = weather {
+                    Text("Weather data fetched!")
+                } else {
+                    //Try to load the data from loading view
+                    LoadingView()
+                         //.task modifier adds an async task to perform
+                        .task {
+                            do{
+                                //Pass lat/long to the weather manager
+                                weather = try await weatherManager.getCurrentWeather(latitude: location.latitude, longitude: location.longitude)
+                            } catch{
+                                print("Error getting data : \(error)")
+                            }
+                        }
+                }
+                
+                
             } else {
                 //if we are not able to get a location
                 //and if it is loading
@@ -44,11 +67,6 @@ struct ContentView: View {
     
     
     }//: VIEW
-    
-    
-    
-    
-    
 }//: BODY
 
 
