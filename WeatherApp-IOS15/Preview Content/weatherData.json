@@ -1,43 +1,44 @@
 {
     "coord": {
-        "lon": 14.25,
-        "lat": 40.8333
+        "lon": -93.2638,
+        "lat": 44.98
     },
     "weather": [
         {
-            "id": 803,
+            "id": 804,
             "main": "Clouds",
-            "description": "broken clouds",
+            "description": "overcast clouds",
             "icon": "04d"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 285.22,
-        "feels_like": 284.6,
-        "temp_min": 284.88,
-        "temp_max": 285.84,
-        "pressure": 1009,
-        "humidity": 81
+        "temp": 21.54,
+        "feels_like": 8.94,
+        "temp_min": 16.05,
+        "temp_max": 25.65,
+        "pressure": 1016,
+        "humidity": 72
     },
-    "visibility": 8000,
+    "visibility": 10000,
     "wind": {
-        "speed": 4.12,
-        "deg": 290
+        "speed": 19.57,
+        "deg": 50,
+        "gust": 36.82
     },
     "clouds": {
-        "all": 75
+        "all": 100
     },
-    "dt": 1645459836,
+    "dt": 1645461866,
     "sys": {
         "type": 2,
-        "id": 2003237,
-        "country": "IT",
-        "sunrise": 1645422569,
-        "sunset": 1645461848
+        "id": 2009535,
+        "country": "US",
+        "sunrise": 1645448676,
+        "sunset": 1645487344
     },
-    "timezone": 3600,
-    "id": 3172394,
-    "name": "Naples",
+    "timezone": -21600,
+    "id": 5037649,
+    "name": "Minneapolis",
     "cod": 200
 }
