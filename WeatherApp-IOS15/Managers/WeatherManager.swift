@@ -5,16 +5,12 @@
 //  Created by Daniel Garofalo on 2/21/22.
 //
 
-/**
-This one will help us connect to the OpenWeatherApi
-*/
-
-
 import Foundation
 import CoreLocation
 
 /**
- Manages the connection and response to/from OpenWeatherAPI
+ #WeatherManager
+ This one will help us connect to the OpenWeatherApi. Manages the connection and response to/from OpenWeatherAPI
  */
 class WeatherManager{
     

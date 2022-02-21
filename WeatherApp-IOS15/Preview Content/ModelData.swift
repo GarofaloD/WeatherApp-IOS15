@@ -5,9 +5,13 @@
 //  Created by Daniel Garofalo on 2/21/22.
 //
 
+/**
+ Models the data that will be passed to the preview from the weatherData.json
+ */
+
 import Foundation
 
-var previewWeather: ResponseBody = load("weatherData.")
+var previewWeather: ResponseBody = load("weatherData.json")
 
 
 func load<T: Decodable>(_ filename: String) -> T {

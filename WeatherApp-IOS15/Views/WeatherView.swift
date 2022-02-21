@@ -27,6 +27,6 @@ struct WeatherView: View {
     //MARK: - PREVIEW
 struct WeatherView_Previews: PreviewProvider {
     static var previews: some View {
-        WeatherView(weather: <#ResponseBody#>)
+        WeatherView(weather: previewWeather)
     }
 }

@@ -33,7 +33,7 @@ struct ContentView: View {
                 
                 //If there is already some weather data
                 if let weather = weather {
-                    Text("Weather data fetched!")
+                    WeatherView(weather: weather)
                 } else {
                     //Try to load the data from loading view
                     LoadingView()
